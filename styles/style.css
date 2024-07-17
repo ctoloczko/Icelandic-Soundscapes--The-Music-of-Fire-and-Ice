@@ -1,0 +1,14 @@
+header {
+  background-image: url(/images/black-beach.jpeg);
+  opacity: 0.9;
+  width: 100%;
+  background-position: center;
+  background-repeat: none;
+  background-size: cover;
+  padding: 200px 0;
+  color: rgb(221, 226, 231);
+}
+
+h1 {
+  text-align: center;
+}
