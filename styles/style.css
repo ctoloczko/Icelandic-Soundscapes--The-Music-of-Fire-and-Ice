@@ -10,7 +10,8 @@ h2 {
 h3,
 h4,
 h5,
-p {
+p,
+a {
   font-family: "Open Sans", sans-serif;
 }
 
@@ -20,7 +21,7 @@ p {
 }
 
 header {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
     url(/images/ice.jpeg);
   width: 100%;
   background-position: center;
@@ -28,6 +29,7 @@ header {
   background-size: cover;
   padding: 200px 0;
   color: rgb(221, 226, 231);
+  text-align: center;
 }
 
 header h1,
@@ -43,13 +45,11 @@ header h1 {
   text-transform: uppercase;
   letter-spacing: 8px;
   margin-top: 50px;
-  text-align: center;
 }
 
 header h2 {
   font-size: 36px;
   font-weight: 400;
-  text-align: center;
 }
 
 header h3 {
@@ -57,7 +57,21 @@ header h3 {
   letter-spacing: 15px;
   font-size: 20px;
   font-weight: 400;
-  text-align: center;
+}
+
+header a {
+  text-decoration: none;
+  background-color: white;
+  opacity: 0.9;
+  color: black;
+  padding: 10px 20px;
+  display: inline-block;
+  text-transform: uppercase;
+  font-weight: 500;
+  border: none;
+  opacity: 0.5;
+  font-size: 16px;
+  border-radius: 2px;
 }
 
 footer {
@@ -67,7 +81,7 @@ footer {
   background-position: center;
   background-repeat: none;
   background-size: cover;
-  padding: 40px 30px;
+  padding: 40px 30px 10px 30px;
   color: rgb(221, 226, 231);
 }
 
@@ -82,11 +96,16 @@ footer li {
   margin: 0;
   padding: 0;
 }
+footer p,
+a {
+  opacity: 0.5;
+  font-size: 15px;
+  line-height: 1.5;
+}
 
 footer a {
-  color: rgb(255, 255, 255);
-  font-family: "Open Sans", sans-serif;
-  opacity: 0.6;
+  color: rgb(188, 187, 210);
+  text-decoration: none;
 }
 
 .grid {
@@ -98,7 +117,7 @@ footer a {
   grid-template-columns: 1fr 2fr 2fr;
 }
 
-@media (max-width: 960px) {
+@media (max-width: 760px) {
   header {
     padding: 50px 0;
   }
@@ -118,5 +137,11 @@ footer a {
 
   header h3 {
     font-size: 10px;
+  }
+  .grid {
+    grid-gap: 10px;
+  }
+  .grid-3-col-first-narrow {
+    grid-template-columns: 1fr;
   }
 }
