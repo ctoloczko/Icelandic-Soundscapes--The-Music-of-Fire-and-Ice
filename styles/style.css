@@ -72,16 +72,18 @@ header a {
   opacity: 0.5;
   font-size: 16px;
   border-radius: 2px;
+  letter-spacing: 2px;
 }
 
 footer {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    url(/images/mountains.jpeg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url(/images/road.jpeg);
   max-width: 100%;
+  margin: 0 auto;
   background-position: center;
   background-repeat: none;
   background-size: cover;
-  padding: 40px 30px 10px 30px;
+  padding: 40px 30px 20px 30px;
   color: rgb(221, 226, 231);
 }
 
@@ -113,8 +115,21 @@ footer a {
   grid-gap: 50px;
 }
 
+.grid-2-col {
+  grid-template-columns: 1fr 1fr;
+}
+
 .grid-3-col-first-narrow {
   grid-template-columns: 1fr 2fr 2fr;
+}
+
+.embed-video {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+}
+
+.video {
+  padding: 30px 10px 30px 7px;
 }
 
 @media (max-width: 760px) {
