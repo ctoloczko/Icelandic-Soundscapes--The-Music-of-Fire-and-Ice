@@ -182,7 +182,7 @@ footer a {
 }
 
 main {
-  padding: 100px 30px;
+  padding: 100px 30px 50px 30px;
   background-color: #e7e5e7;
 }
 
@@ -204,12 +204,16 @@ main h3,
   grid-template-columns: 1fr 1fr;
 }
 
-.grid-3-col-first-narrow {
-  grid-template-columns: 1fr 2fr 2fr;
+.grid-mixed {
+  grid-template-columns: 1fr 1fr 3fr 2fr;
 }
 
 .grid-3-col {
   grid-template-columns: 1fr 1fr 1fr;
+}
+
+.about-me {
+  padding-right: 40px;
 }
 
 @media (max-width: 900px) {
@@ -226,16 +230,41 @@ main h3,
     font-size: 32px;
   }
 
-  header h2 {
-    font-size: 18px;
+  header h2,
+  main h2 {
+    font-size: 22px;
   }
 
-  header h3 {
-    font-size: 10px;
+  header h3,
+  main h3 {
+    font-size: 12px;
   }
+
+  p {
+    font-size: 15px;
+  }
+
+  .card h5,
+  h4 {
+    margin-top: 10px;
+  }
+
   .grid {
     grid-gap: 10px;
     grid-template-columns: 1fr;
+  }
+  .subsection {
+    padding-top: 40px;
+    padding-bottom: 20px;
+  }
+
+  main {
+    padding: 30px 5px;
+    text-align: center;
+  }
+
+  .volcano {
+    display: none;
   }
 
   main h3 {
